@@ -14,8 +14,7 @@ body{
   background:#f4f7fb;
 }
 
-<!-- NAVBAR 
-/* NAVBAR 
+/* NAVBAR */
 .navbar{
   background:#2c643d;
 }
@@ -35,7 +34,7 @@ body{
 .btn-logout{
   background:#198754;
 }
--->
+
 /* HERO */
 .hero{
   background:#509273;
@@ -83,14 +82,14 @@ ul{
 
 <body>
 
-<!-- NAVBAR
+<!-- NAVBAR -->
 <nav class="navbar fixed-top">
   <div class="container">
     <a class="navbar-brand">Dashboard</a>
     <a class="nav-btn btn-logout" href="login.html">Logout</a>
   </div>
 </nav>
--->
+
 
 <!-- HERO -->
 <section class="hero">
@@ -108,11 +107,11 @@ ul{
 <section class="container my-5">
 <h3 class="mb-4 text-center">Syarat dokumen silahkan pilih dibawah ini!</h3>
 
-<div class="row g-4 accordion">
+<div class="row g-4">
 
 <!-- KTP -->
 <div class="col-12 col-md-6">
-<details>
+<details open>
 <summary>Pelayanan KTP Elektronik</summary>
 <ul class="mt-3">
 <li>
@@ -323,47 +322,27 @@ ul{
 </div>
 
 <!-- LEGALISASI -->
-<div class="col-12 col-md-6">
-<details>
-  <summary>Legalisasi Umum</summary>
-  <ul class="mt-3">
-    <li>Legalisasi dokumen</li>
-    <li>Legalisasi surat</li>
-    <li>Legalisasi berkas resmi</li>
-  </ul>
-  <p><em>Tidak dipungut biaya</em></p>
-</details>
+<!-- LEGALISASI -->
+<div class="col-12 d-flex justify-content-center">
+  <div class="col-12 col-md-6">
+    <details>
+      <summary>Legalisasi Umum</summary>
+      <ul class="mt-3">
+        <li>Legalisasi dokumen</li>
+        <li>Legalisasi surat</li>
+        <li>Legalisasi berkas resmi</li>
+      </ul>
+      <p><em>Tidak dipungut biaya</em></p>
+    </details>
+  </div>
 </div>
 
 </div>
 </section>
 
-...
 <footer class="text-center py-4 text-muted">
 © 2026 Kecamatan Buluspesantren
 </footer>
 
-<script>
-document.querySelectorAll('.accordion > .col-12 > details > summary')
-.forEach(summary => {
-  summary.addEventListener('click', function () {
-
-    const current = this.parentElement;
-    const allDetails = document.querySelectorAll(
-      '.accordion > .col-12 > details'
-    );
-
-    allDetails.forEach(detail => {
-      if (detail !== current) {
-        detail.removeAttribute('open'); // tutup yang lain
-      }
-    });
-
-  });
-});
-</script>
-
 </body>
 </html>
-
-
